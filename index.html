@@ -21,6 +21,7 @@
 			height: 180px;
 			display: flex;
 			justify-content: center;
+			flex-direction: column;
 			align-items: center;
 			color: #8B0A1A; /* dark red */
 			text-decoration: none;
@@ -30,58 +31,117 @@
 		.card:hover {
 			transform: perspective(1000px) rotateY(10deg);
 		}
+		 .card img {
+      width: 100px; /* adjust logo size */
+      height: 100px; /* adjust logo size */
+      margin-bottom: 10px;
+    }
+    
+    .card .card-text {
+      font-size: 18px; /* adjust text size */
+    }
 	</style>
 </head>
 <body>
 	<h1 style="text-align: center; margin-bottom: 20px;">Center Zone Polytechnics</h1>
 	<div class="container">
-		<a href="https://www.ggplucknow.org/" class="card">2080	GOVT. GIRLS POLYTECHNIC, LUCKNOW</a>
-		<a href="http://sgpolytechnic.com/" class="card">2124	GOVT. POLYTECHNIC, BACHHRAWAN, RAI BARELI</a>
-		<a href="https://www.gplucknow.org/" class="card">2201	GOVT. POLYTECHNIC, LUCKNOW</a>
-		<a href="https://www.gpfaizabad.org/" class="card">2205	GOVT. POLYTECHNIC, AYODHYA</a>
-		<a href="http://ggpayodhya.org/" class="card">2206	ARYIKAGYANWATI, GOVT. GIRLS POLYTECHNIC, AYODHYA</a>
-		<a href="http://csjmgpa.org.in/" class="card">2207	CHHATRAPATI SHAHUJI MAHARAJ GOVT.POLY. AMBEDKARNAGAR</a>
-		<a href="https://dan.com/buy-domain/gpbarabanki.com?redirected=true" class="card">2208	GOVT. POLYTECHNIC, BARABANKI</a>
-		<a href="http://www.gpgondaup.com/" class="card">2209	GOVT. POLYTECHNIC, GONDA</a>
-		<a href="http://www.gpbahraichup.com/" class="card">2210	GOVT. POLYTECHNIC, BAHRAICH</a>
-		<a href="https://www.ggpamethi.in/" class="card">2211	GOVT. GIRLS POLYTECHNIC, AMETHI</a>
-		<a href="https://gpunnao.com/" class="card">2212	GOVT. POLYTECHNIC, UNNAO</a>
-		<a href="http://www.gphardoi.co.in/" class="card">2214	GOVT. POLYTECHNIC, HARDOI</a>
-		<a href="http://www.gplakhimpur.com/" class="card">2215	GOVT. POLYTECHNIC, LAKHIMPUR KHERI</a>
-		<a href="http://www.gpbareilly.com/" class="card">2216	GOVT. POLYTECHNIC, BAREILLY</a>
-		<a href="https://www.ggpbareilly.com/" class="card">2217	GOVT. GIRLS POLYTECHNIC, BAREILLY</a>
-		<a href="http://www.gpbadaun.com/" class="card">2218	GOVT. POLYTECHNIC, BUDAUN</a>
-		<a href="http://www.gppilibhit.in/" class="card">2219	GOVT. POLYTECHNIC, PILIBHIT</a>
-		<a href="#" class="card">2220	GOVT. POLYTECHNIC, SHAHJAHANPUR</a>
-		<a href="http://sgpolytechnic.com/" class="card">2221	SANJAY GANDHI GOVT. POLYTECHNIC, JAGDISHPUR, AMETHI</a>
-		<a href="https://gpkursibbk.com/" class="card">2228	GOVT. POLYTECHNIC, KURSI ROAD, FATEHPUR, BARABANKI</a>
-		<a href="http://www.gpaadampur.in/" class="card">2230	GOVERNMENT POLYTECHNIC, AADAMPUR, TARABGANJ, GONDA</a>
-		<a href="#" class="card">2234	GOVT. POLYTECHNIC, MOHAMMADPUR, BAHRAICH</a>
-		<a href="https://tgbgpolyshr.in/" class="card">2250	TATHAGAT GAUTAM BUDDHA GOVT. POLYTECHNIC, SHRAVASTI</a>
-		<a href="http://www.csjgpbalrampur.com/" class="card">2251	CHHATRAPATI SAHUJI MAHARAJ GOVT. POLYTECHNIC, BALRAMPUR</a>
-		<a href="#" class="card">2614	MAHARISHI PATANJALI POLYTECHNIC OF INFORMATION TECHNOLOGY (PPP MODE)</a>
-		<a href="#" class="card">2615	GOVERNMENT POLYTECHNIC KADIPUR SULTANPUR RUN BY AICCEDS (PPP MODE)</a>
-		<a href="#" class="card">2616	GOVERNMENT POLYTECHNIC BHANPUR, NAKHA, LAKHIMPUR- KHERI (PPP MODE)</a>
-		<a href="#" class="card">2617	GOVERNMENT POLYTECHNIC GOPALPUR,SALON,RAEBARELI (PPP MODE)</a>
-		<a href="#" class="card">2618	GOVERNMENT POLYTECHNIC GOPAMAU HARDOI (PPP MODE)</a>
-		<a href="#" class="card">2619	GOVERNMENT POLYTECHNIC BAKSHI KA TALAB,LUCKNOW (PPP MODE)</a>
-		<a href="#" class="card">2620	GOVERNMENT POLYTECHNIC HARDOI SANDILA (PPP MODE)</a>
-		<a href="#" class="card">2621	GOVERNMENT POLYTECHNIC BILSI BUDAUN (PPP MODE)</a>
-		<a href="http://gpalapurbudaun.com/" class="card">2701	GOVT. POLYTECHNIC, ALAPUR, BUDAUN</a>
-		<a href="https://gpdeehunnao.org/" class="card">2702	GOVT. POLYTECHNIC, DEEH, SADAR, UNNAO</a>
-		<a href="https://www.govtpolypwn.com/" class="card">2703	GOVT. POLYTECHNIC, PUWAYAN, SHAHJAHANPUR</a>
-		<a href="https://gpbhiti.com/" class="card">2712	GOVT. POLYTECHNIC,BAIJPUR,BHITI,AMBEDKAR NAGAR</a>
-		<a href="http://gpksln.edu.in/" class="card">2717	GOVT. POLYTECHNIC KENAURA SULTANPUR</a>
-		<a href="http://www.mmitshravasti.co.in/" class="card">2718	MAHAMAYA POLYTECHNIC OF INFORMATION TECHNOLOGY SHARAVASTI</a>
-		<a href="http://www.mmitshravasti.co.in/" class="card">2719	GOVT. POLYTECHNIC ALIYA SITAPUR</a>
-		<a href="http://www.gppuranpur.in/" class="card">2720	GOVT. POLYTECHNIC POORANPUR PILIBHIT</a>
-		<a href="https://www.gpbighapur.in/" class="card">2721	GOVT. POLYTECHNIC BIGAPUR UNNAO</a>
-		<a href="http://www.gpmkheri.com/" class="card">2737	GOVT. POLYTECHNIC,MOHAMMADI, LAKHIMPUR KHERI</a>
-		<a href="http://www.ggptilharspn.in/" class="card">2738	GOVT. GIRLS POLYTECHNIC,TILHAR,SHAHJAHANPUR</a>
-		<a href="https://www.gpharakh.org/" class="card">2739	GOVT. POLYTECHNIC,JAMUNIA DEEH,HARAKH,BARABANKI</a>
-		<a href="#" class="card">2740	GOVT. GIRLS POLYTECHNIC,RISIYA,NANPARA,BAHARAICH</a>
-		<a href="http://www.gpsahaswan.com/" class="card">2784	GOVT. POLYTECHNIC,SUMDA,SAHASWAN, BUDAUN</a>
-		<a href="http://www.gpbaheribly.com/" class="card">2785	GOVT. POLYTECHNIC, BAHERI,BAREILLY</a>
+		
+		<a href="https://www.ggplucknow.org/" class="card">
+			<img src="logo2080.jpg" alt=""> <div class="card-text">GGP LUCKNOW</div></a>
+		
+		<a href="http://sgpolytechnic.com/" class="card">
+			<img src="logo2124.jpg" alt=""> <div class="card-text">G.P. BACHHRAWAN</div></a>
+		
+		<a href="https://www.gplucknow.org/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2201	GOVT. POLYTECHNIC, LUCKNOW</a>
+		<a href="https://www.gpfaizabad.org/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2205	GOVT. POLYTECHNIC, AYODHYA</a>
+		<a href="http://ggpayodhya.org/" class="card">\
+			<img src="logo" alt=""> <div class="card-text"></div>2206	ARYIKAGYANWATI, GOVT. GIRLS POLYTECHNIC, AYODHYA</a>
+		<a href="http://csjmgpa.org.in/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2207	CHHATRAPATI SHAHUJI MAHARAJ GOVT.POLY. AMBEDKARNAGAR</a>
+		<a href="https://dan.com/buy-domain/gpbarabanki.com?redirected=true" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2208	GOVT. POLYTECHNIC, BARABANKI</a>
+		<a href="http://www.gpgondaup.com/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2209	GOVT. POLYTECHNIC, GONDA</a>
+		<a href="http://www.gpbahraichup.com/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2210	GOVT. POLYTECHNIC, BAHRAICH</a>
+		<a href="https://www.ggpamethi.in/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2211	GOVT. GIRLS POLYTECHNIC, AMETHI</a>
+		<a href="https://gpunnao.com/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2212	GOVT. POLYTECHNIC, UNNAO</a>
+		<a href="http://www.gphardoi.co.in/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2214	GOVT. POLYTECHNIC, HARDOI</a>
+		<a href="http://www.gplakhimpur.com/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2215	GOVT. POLYTECHNIC, LAKHIMPUR KHERI</a>
+		<a href="http://www.gpbareilly.com/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2216	GOVT. POLYTECHNIC, BAREILLY</a>
+		<a href="https://www.ggpbareilly.com/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2217	GOVT. GIRLS POLYTECHNIC, BAREILLY</a>
+		<a href="http://www.gpbadaun.com/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2218	GOVT. POLYTECHNIC, BUDAUN</a>
+		<a href="http://www.gppilibhit.in/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2219	GOVT. POLYTECHNIC, PILIBHIT</a>
+		<a href="#" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2220	GOVT. POLYTECHNIC, SHAHJAHANPUR</a>
+		<a href="http://sgpolytechnic.com/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2221	SANJAY GANDHI GOVT. POLYTECHNIC, JAGDISHPUR, AMETHI</a>
+		<a href="https://gpkursibbk.com/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2228	GOVT. POLYTECHNIC, KURSI ROAD, FATEHPUR, BARABANKI</a>
+		<a href="http://www.gpaadampur.in/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2230	GOVERNMENT POLYTECHNIC, AADAMPUR, TARABGANJ, GONDA</a>
+		<a href="#" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2234	GOVT. POLYTECHNIC, MOHAMMADPUR, BAHRAICH</a>
+		<a href="https://tgbgpolyshr.in/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2250	TATHAGAT GAUTAM BUDDHA GOVT. POLYTECHNIC, SHRAVASTI</a>
+		<a href="http://www.csjgpbalrampur.com/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2251	CHHATRAPATI SAHUJI MAHARAJ GOVT. POLYTECHNIC, BALRAMPUR</a>
+		<a href="#" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2614	MAHARISHI PATANJALI POLYTECHNIC OF INFORMATION TECHNOLOGY (PPP MODE)</a>
+		<a href="#" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2615	GOVERNMENT POLYTECHNIC KADIPUR SULTANPUR RUN BY AICCEDS (PPP MODE)</a>
+		<a href="#" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2616	GOVERNMENT POLYTECHNIC BHANPUR, NAKHA, LAKHIMPUR- KHERI (PPP MODE)</a>
+		<a href="#" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2617	GOVERNMENT POLYTECHNIC GOPALPUR,SALON,RAEBARELI (PPP MODE)</a>
+		<a href="#" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2618	GOVERNMENT POLYTECHNIC GOPAMAU HARDOI (PPP MODE)</a>
+		<a href="#" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2619	GOVERNMENT POLYTECHNIC BAKSHI KA TALAB,LUCKNOW (PPP MODE)</a>
+		<a href="#" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2620	GOVERNMENT POLYTECHNIC HARDOI SANDILA (PPP MODE)</a>
+		<a href="#" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2621	GOVERNMENT POLYTECHNIC BILSI BUDAUN (PPP MODE)</a>
+		<a href="http://gpalapurbudaun.com/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2701	GOVT. POLYTECHNIC, ALAPUR, BUDAUN</a>
+		<a href="https://gpdeehunnao.org/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2702	GOVT. POLYTECHNIC, DEEH, SADAR, UNNAO</a>
+		<a href="https://www.govtpolypwn.com/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2703	GOVT. POLYTECHNIC, PUWAYAN, SHAHJAHANPUR</a>
+		<a href="https://gpbhiti.com/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2712	GOVT. POLYTECHNIC,BAIJPUR,BHITI,AMBEDKAR NAGAR</a>
+		<a href="http://gpksln.edu.in/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2717	GOVT. POLYTECHNIC KENAURA SULTANPUR</a>
+		<a href="http://www.mmitshravasti.co.in/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2718	MAHAMAYA POLYTECHNIC OF INFORMATION TECHNOLOGY SHARAVASTI</a>
+		<a href="http://www.mmitshravasti.co.in/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2719	GOVT. POLYTECHNIC ALIYA SITAPUR</a>
+		<a href="http://www.gppuranpur.in/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2720	GOVT. POLYTECHNIC POORANPUR PILIBHIT</a>
+		<a href="https://www.gpbighapur.in/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2721	GOVT. POLYTECHNIC BIGAPUR UNNAO</a>
+		<a href="http://www.gpmkheri.com/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2737	GOVT. POLYTECHNIC,MOHAMMADI, LAKHIMPUR KHERI</a>
+		<a href="http://www.ggptilharspn.in/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2738	GOVT. GIRLS POLYTECHNIC,TILHAR,SHAHJAHANPUR</a>
+		<a href="https://www.gpharakh.org/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2739	GOVT. POLYTECHNIC,JAMUNIA DEEH,HARAKH,BARABANKI</a>
+		<a href="#" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2740	GOVT. GIRLS POLYTECHNIC,RISIYA,NANPARA,BAHARAICH</a>
+		<a href="http://www.gpsahaswan.com/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2784	GOVT. POLYTECHNIC,SUMDA,SAHASWAN, BUDAUN</a>
+		<a href="http://www.gpbaheribly.com/" class="card">
+			<img src="logo" alt=""> <div class="card-text"></div>2785	GOVT. POLYTECHNIC, BAHERI,BAREILLY</a>
 		
 		
 	</div>
